@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Campo Minado</title>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="geraCampo()">
+	<div class="game">
+		<div class="painel">
+			<div class="flagMenu" id="flagMenu" onclick="flagCP()">
+				<img src="img/flag.svg">
+			</div>
+			<div class="relogio"><p id="timer"></p></div>
+			<div class="contador">
+				<p id="qtdBombas"></p>
+				<img src="img/bomb.svg">
+			</div>
+			<div class="refreshMenu">
+				<img src="img/refresh.svg" onclick="restartGame()">
+			</div>
+		</div>
+		<div id="area">
+			<table id="tabela">
+			</table>
+		</div>
+	</div>
+</body>
+</html>
+
+<div class="modal" id="modal" name="modal">
+	<h3>Parabéns!! Você Ganhou!</h3>
+	<div class="dados">
+		<div class="list">
+			<p>Seu tempo foi de: </p>
+			<p id="myTime"></p>
+		</div>
+		<div class="list">
+			<p>Record atual: </p>
+			<p id="myRecord"></p>
+		</div>
+	</div>
+	<button onclick="restartGame()">Novo Jogo</button>
+</div>
+
+<div id="gameover" class="gameover"><p>Game Over</p></div>
