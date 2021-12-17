@@ -357,6 +357,7 @@ function showModal() {
 	let modal = document.getElementById('modal');
 	let myTime = document.getElementById('myTime');
 	let myRecord = document.getElementById('myRecord');
+	clearInterval(fim);
 	modal.classList.toggle('showModal');
 	myTime.innerHTML = tempo;
 	writeRecord(tempo);
@@ -376,6 +377,8 @@ function readRecord() {
 function showGO() {
 	if (go) {
 		let gameover = document.getElementById('gameover');
+		let reload = document.getElementById('reload');
 		gameover.classList.toggle('showGO');
+		reload.style.cssText = 'animation: rotate 3s linear 1s infinite;';
 	}
 }
