@@ -291,7 +291,7 @@ function addFlag(x) {
 	var id = 'c' + i + '-' + j;
 	let camp = document.getElementById(id);
 	if (numFlags < qtd_bombs) {
-		camp.innerHTML = '<img src="img/flag.svg" class="flag">';
+		camp.innerHTML = '<img src="img/flag.png" class="flag">';
 		campos[c] = campos[c] + 100;
 		numFlags++;
 		contaBombas();
