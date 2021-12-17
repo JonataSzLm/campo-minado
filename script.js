@@ -1,6 +1,6 @@
 const row = 10; //numero de linhas
 const col = 10; //numero de colunas
-const qtd_bombs = 10; //quantidade de bombas
+const qtd_bombs = 12; //quantidade de bombas
 var campos = []; //vetor de suporte
 var flag = false;
 var numFlags = 0;
